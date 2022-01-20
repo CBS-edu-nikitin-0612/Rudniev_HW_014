@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace aditionalTask
 {
-    internal class Printer
+    abstract class Printer
     {
         public virtual void Print(string value)
         {

@@ -18,10 +18,14 @@ namespace task3
         public Plane(string model, double price, double speed, ushort year, int maxNumbOfPas, ushort maxHeight)
             : base(model, price, speed, year, maxNumbOfPas) => this.maxHeight = maxHeight;
 
-        public override void Show()
+        //public override void Show()
+        //{
+        //    base.Show();
+        //    Console.WriteLine("Max height flight: " + this.MaxHeight + "m;");
+        //}
+        public override string ToString()
         {
-            base.Show();
-            Console.WriteLine("Max height flight: " + this.MaxHeight + "m;");
+            return base.ToString() + "Max height flight: " + this.MaxHeight + "m;\n";
         }
     }
 }

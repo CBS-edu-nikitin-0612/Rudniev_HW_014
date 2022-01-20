@@ -31,13 +31,21 @@ namespace task3
             this.maxNumberOfPassengers = maxNumbOfPas;
         }
 
-        public virtual void Show()
+        //public virtual void Show()
+        //{
+        //    Console.WriteLine("Vehicle model: " + this.Model + ";");
+        //    Console.WriteLine("Year of issue: " + this.YearOfIssue + ";");
+        //    Console.WriteLine("Max speed: " + this.MaxSpeed + ";");
+        //    Console.WriteLine("Max number of passengers: " + this.MaxNumberOfPassengers + ";");
+        //    Console.WriteLine("Price: " + this.Price + "usd;");
+        //}
+        public override string ToString()
         {
-            Console.WriteLine("Vehicle model: " + this.Model + ";");
-            Console.WriteLine("Year of issue: " + this.YearOfIssue + ";");
-            Console.WriteLine("Max speed: " + this.MaxSpeed + ";");
-            Console.WriteLine("Max number of passengers: " + this.MaxNumberOfPassengers + ";");
-            Console.WriteLine("Price: " + this.Price + "usd;");
+            return "Vehicle model: " + this.Model + ";\n" +
+                "Year of issue: " + this.YearOfIssue + ";\n" +
+                "Max speed: " + this.MaxSpeed + ";\n" +
+                "Max number of passengers: " + this.MaxNumberOfPassengers + ";\n" +
+                "Price: " + this.Price + "usd;\n";
         }
     }
 }

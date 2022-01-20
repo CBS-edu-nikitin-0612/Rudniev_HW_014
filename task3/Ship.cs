@@ -17,10 +17,14 @@ namespace task3
         public Ship(string model, double price, double speed, ushort year, int maxNumbOfPas, string port)
             : base(model, price, speed, year, maxNumbOfPas) => this.port = port;
 
-        public override void Show()
+        //public override void Show()
+        //{
+        //    base.Show();
+        //    Console.WriteLine("Home port ship: " + this.Port + ";");
+        //}
+        public override string ToString()
         {
-            base.Show();
-            Console.WriteLine("Home port ship: " + this.Port + ";");
+            return base.ToString() + "Home port ship: " + this.Port + ";\n";
         }
     }
 }

@@ -15,6 +15,8 @@ namespace task3
         public Car(string model, double price, double speed, ushort year, int maxNumbOfPas)
             : base(model, price, speed, year, maxNumbOfPas) { }
 
-        public override void Show() => base.Show();
+        //public override void Show() => base.Show();
+
+        public override string ToString() => base.ToString();
     }
 }

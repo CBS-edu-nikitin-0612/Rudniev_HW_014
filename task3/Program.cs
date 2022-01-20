@@ -14,7 +14,8 @@ namespace task3
 
             foreach (var vehicle in vehicles)
             {
-                vehicle.Show();
+                Console.WriteLine(vehicle.ToString());
+                //vehicle.Show();
                 Console.WriteLine(new string('_', 50));
             }
         }
